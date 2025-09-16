@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{b030e285-683f-4b33-a845-ff6f5ce03a78}</ProjectGuid>
+    <RootNamespace>BongoCat</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Gdiplus.lib;Shlwapi.lib;Ole32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Gdiplus.lib;Shlwapi.lib;Ole32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Gdiplus.lib;Shlwapi.lib;Ole32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <StringPooling>true</StringPooling>
+
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Gdiplus.lib;Shlwapi.lib;Ole32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+  </ItemDefinitionGroup>
+<ItemGroup>
+    <ClCompile Include="..\src\app\Application.cpp" />
+    <ClCompile Include="..\src\states\ApplicationState.cpp" />
+    <ClCompile Include="..\src\app\BongoCatApp.cpp" />
+    <ClCompile Include="..\src\states\CatStateMachine.cpp" />
+    <ClCompile Include="..\src\managers\ImageManager.cpp" />
+    <ClCompile Include="..\src\managers\InputManager.cpp" />
+    <ClCompile Include="..\src\managers\WindowManager.cpp" />
+    <ClCompile Include="..\src\utils\RegistryUtils.cpp" />
+    <ClCompile Include="..\src\utils\SettingsService.cpp" />
+    <ClCompile Include="..\src\utils\SkinService.cpp" />
+    <ClCompile Include="..\src\utils\SkinPresentation.cpp" />
+    <ClCompile Include="..\src\utils\ValidationUtils.cpp" />
+    <ClCompile Include="..\src\utils\StateService.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="..\src\states\ApplicationState.h" />
+    <ClInclude Include="..\src\app\BongoCatApp.h" />
+    <ClInclude Include="..\src\states\CatStateMachine.h" />
+    <ClInclude Include="..\src\managers\ImageManager.h" />
+    <ClInclude Include="..\src\managers\InputManager.h" />
+    <ClInclude Include="..\src\managers\WindowManager.h" />
+    <ClInclude Include="..\src\utils\RegistryUtils.h" />
+    <ClInclude Include="..\src\utils\Configuration.h" />
+    <ClInclude Include="..\src\utils\SettingsService.h" />
+    <ClInclude Include="..\src\utils\StateService.h" />
+    <ClInclude Include="..\src\utils\SkinService.h" />
+    <ClInclude Include="..\src\utils\SkinPresentation.h" />
+    <ClInclude Include="..\src\utils\ValidationUtils.h" />
+    <ClInclude Include="..\src\utils\RAII\Base.h" />
+    <ClInclude Include="..\src\utils\RAII\Gdi.h" />
+    <ClInclude Include="..\src\utils\RAII\GdiPlus.h" />
+    <ClInclude Include="..\src\utils\RAII\Hook.h" />
+    <ClInclude Include="..\src\utils\RAII\Handle.h" />
+    <ClInclude Include="..\src\utils\RAII\Menu.h" />
+    <ClInclude Include="..\src\utils\RAII\Timer.h" />
+    <ClInclude Include="..\src\utils\RAII\Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BongoCat.rc">
+      <AdditionalIncludeDirectories>../resources;../resources/icons;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\img\Icon.ico" />
+    <Image Include="..\img\skins\Honey\Blink.png" />
+    <Image Include="..\img\skins\Honey\Left.png" />
+    <Image Include="..\img\skins\Honey\Rest.png" />
+    <Image Include="..\img\skins\Honey\Right.png" />
+    <Image Include="..\img\skins\Latte\Blink.png" />
+    <Image Include="..\img\skins\Latte\Left.png" />
+    <Image Include="..\img\skins\Latte\Rest.png" />
+    <Image Include="..\img\skins\Latte\Right.png" />
+    <Image Include="..\img\skins\Marshmallow\Blink.png" />
+    <Image Include="..\img\skins\Marshmallow\Left.png" />
+    <Image Include="..\img\skins\Marshmallow\Rest.png" />
+    <Image Include="..\img\skins\Marshmallow\Right.png" />
+    <Image Include="..\img\skins\Mochi\Blink.png" />
+    <Image Include="..\img\skins\Mochi\Left.png" />
+    <Image Include="..\img\skins\Mochi\Rest.png" />
+    <Image Include="..\img\skins\Mochi\Right.png" />
+    <Image Include="..\img\skins\Toffee\Blink.png" />
+    <Image Include="..\img\skins\Toffee\Left.png" />
+    <Image Include="..\img\skins\Toffee\Rest.png" />
+    <Image Include="..\img\skins\Toffee\Right.png" />
+    <Image Include="..\img\skins\Treacle\Blink.png" />
+    <Image Include="..\img\skins\Treacle\Left.png" />
+    <Image Include="..\img\skins\Treacle\Rest.png" />
+    <Image Include="..\img\skins\Treacle\Right.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
