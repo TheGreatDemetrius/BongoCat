@@ -49,4 +49,4 @@ The output executable will be placed in the corresponding build output directory
 **No telemetry and no network access.** The app only installs local low‑level input hooks to count clicks and drive animation.
 
 ## License
-Licensed under the [MIT](./LICENSE) license.
+Licensed under the [MIT](./LICENSE.txt) license.
